@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
+    <header id="topo">
         <div class="flex-container menu">
             <div><h1>FlexTurismos</h1></div>
             <ul class="list-items">
@@ -116,12 +116,27 @@
             </div>
         </div>
     </div>
-
+    <div class="flex-container">
+        <a class="botao-fixo" href="#topo">
+            <span>/\</span>
+        </a>
+    </div>
+    
     <footer>
         <div class="flex-container footer">
             <p>&copy; 2021 CSS Flexbox</p>
             <p>Desenvolvido por: José Antonio dos Santos Barbosa</p>
         </div>
     </footer>
+    <script>
+        const botao = document.querySelector(".botao-fixo");
+        window.addEventListener("scroll", function(event){
+            if(window.scrollY == 0){
+                botao.classList.remove("visible");
+            }else{
+                botao.classList.add("visible");
+            }
+        });
+    </script>
 </body>
 </html>

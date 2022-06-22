@@ -37,6 +37,26 @@ header{
     color: #fff;
 }
 
+.botao-fixo{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    visibility: hidden;
+    font-size: 48px;
+    text-decoration: none;
+    color: orangered;
+    background-color: #122a57;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+}
+
+.botao-fixo.visible{
+    visibility: visible;
+}
+
 header .list-items{
     display: flex;
     align-items: center;
